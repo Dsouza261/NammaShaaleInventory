@@ -12,6 +12,8 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.inject.Inject
 import javax.inject.Singleton
+import com.nammashaalee.inventory.BuildConfig
+
 
 data class ConditionAnalysisResult(
     val condition: AssetCondition,
@@ -24,7 +26,8 @@ data class ConditionAnalysisResult(
 class GeminiHelper @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
-    private val apiKey = "AIzaSyAqxxy7i2t_9Ww87KNUONm5oT8d8Cgg8gM"
+    private val apiKey = BuildConfig.GEMINI_API_KEY
+
     private val apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     suspend fun analyzeAssetPhoto(imagePath: String): ConditionAnalysisResult? = null
 
