@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "855112180014",
+    "project_id": "nammashaalee",
+    "storage_bucket": "nammashaalee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855112180014:android:86e0081ce78a0fcad29abf",
+        "android_client_info": {
+          "package_name": "com.nammashaalee.inventory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855112180014-7u5d7p1p29s5vu9vp2mgsf6kg46d2395.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nammashaalee.inventory",
+            "certificate_hash": "0b1a205a380086ba9024f9a5c20cf39b53c5850a"
+          }
+        },
+        {
+          "client_id": "855112180014-iq8gjecjcehsumsdqfaajo3ioqv53cic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnkZL2sZOWgRYgyDlMPESm4ZnVmGu5hTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855112180014-iq8gjecjcehsumsdqfaajo3ioqv53cic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

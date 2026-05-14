@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namma-Shaale Inventory</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_assets">Assets</string>
+    <string name="nav_add">Add Item</string>
+    <string name="nav_report">Report</string>
+    <string name="total_assets">Total Assets</string>
+    <string name="working">Working</string>
+    <string name="needs_repair">Needs Repair</string>
+    <string name="broken">Broken</string>
+    <string name="save">Save Asset</string>
+    <string name="item_name">Item Name</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="room_location">Room / Location</string>
+    <string name="condition">Condition</string>
+    <string name="issue_note">Issue / Note (optional)</string>
+    <string name="generate_report">Generate AI Report</string>
+    <string name="monthly_health_check">Monthly Health Check</string>
+    <string name="ai_insight">AI Insight</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="share_report">Share Report</string>
+    <string name="default_web_client_id">855112180014-iq8gjecjcehsumsdqfaajo3ioqv53cic.apps.googleusercontent.com</string>
+</resources>

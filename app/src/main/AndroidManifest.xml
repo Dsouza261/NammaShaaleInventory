@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".NammaShaaleApp"
+        android:allowBackup="true"
+        android:label="Namma-Shaale Inventory"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NammaShaaleInventory">
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".ui.auth.SplashActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Auth Screens -->
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.auth.SignUpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.auth.OtpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.auth.ForgotPasswordActivity"
+            android:exported="false" />
+
+        <!-- Main App -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

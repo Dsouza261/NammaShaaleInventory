@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NammaShaaleInventory" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+
+    <style name="CardStyle">
+        <item name="android:background">@color/card_background</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="BadgeGreen">
+        <item name="android:background">@drawable/badge_green</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="BadgeAmber">
+        <item name="android:background">@drawable/badge_amber</item>
+        <item name="android:textColor">@color/amber</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="BadgeRed">
+        <item name="android:background">@drawable/badge_red</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+</resources>

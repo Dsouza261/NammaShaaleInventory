@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.nammashaalee.inventory.ui.dashboard.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/assetsFragment"
+        android:name="com.nammashaalee.inventory.ui.assets.AssetsFragment"
+        android:label="Assets">
+        <action
+            android:id="@+id/action_assets_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addAssetFragment"
+        android:name="com.nammashaalee.inventory.ui.addasset.AddAssetFragment"
+        android:label="Add Asset" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.nammashaalee.inventory.ui.detail.DetailFragment"
+        android:label="Asset Detail">
+        <argument
+            android:name="assetId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.nammashaalee.inventory.ui.report.ReportFragment"
+        android:label="Report" />
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.nammashaalee.inventory.ui.addasset.CameraFragment"
+        android:label="Camera" />
+
+</navigation>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- App Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Namma-Shaale Inventory"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_school_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Assets: 0 | Needs Repair: 0"
+                android:textColor="#BBDDFF"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tv_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#BBDDFF"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="11sp"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp"
+                android:paddingStart="0dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Stats Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ASSET HEALTH OVERVIEW"
+                        android:textSize="11sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="@color/background" android:padding="8dp" android:gravity="center">
+                            <TextView android:id="@+id/tv_working_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" android:textColor="@color/green" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Working" android:textSize="10sp" android:textColor="@color/text_secondary" />
+                        </LinearLayout>
+
+                        <View android:layout_width="6dp" android:layout_height="1dp" />
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="@color/background" android:padding="8dp" android:gravity="center">
+                            <TextView android:id="@+id/tv_repair_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" android:textColor="@color/amber" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Needs Repair" android:textSize="10sp" android:textColor="@color/text_secondary" />
+                        </LinearLayout>
+
+                        <View android:layout_width="6dp" android:layout_height="1dp" />
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="@color/background" android:padding="8dp" android:gravity="center">
+                            <TextView android:id="@+id/tv_broken_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" android:textColor="@color/red" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Broken" android:textSize="10sp" android:textColor="@color/text_secondary" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_total_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total: 0 assets tracked"
+                        android:textSize="11sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- AI Insight Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GenAI Insight"
+                        android:textColor="#BBDDFF"
+                        android:textSize="11sp"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_ai_insight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add assets to get AI-powered insights about your school inventory."
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:lineSpacingExtra="3dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Recent Activity Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RECENT ACTIVITY"
+                        android:textSize="11sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginBottom="6dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_recent_assets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
