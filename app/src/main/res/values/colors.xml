@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Namma-Shaale Inventory Color Theme -->
     <color name="primary">#1A3C6E</color>
     <color name="primary_dark">#0F2548</color>
     <color name="primary_light">#E8EFFD</color>
