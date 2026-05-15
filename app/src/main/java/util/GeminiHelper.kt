@@ -24,6 +24,7 @@ data class ConditionAnalysisResult(
 
 @Singleton
 class GeminiHelper @Inject constructor(
+    // Gemini 2.5 Flash AI — generates asset condition analysis and SDMC reports
     @ApplicationContext private val context: Context
 ) {
     private val apiKey = BuildConfig.GEMINI_API_KEY
