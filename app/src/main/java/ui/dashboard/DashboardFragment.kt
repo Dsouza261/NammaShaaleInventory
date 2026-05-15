@@ -17,6 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class DashboardFragment : Fragment() {
+    // Dashboard screen — shows live asset health stats and AI insights
 
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
